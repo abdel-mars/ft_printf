@@ -2,7 +2,7 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_printf.c ft_aide00.c ft_aide01.c
+SRCS = ft_printf.c ft_tool.c ft_tools.c
 
 NAME = libftprintf.a
 

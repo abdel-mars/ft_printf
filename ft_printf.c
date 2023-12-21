@@ -6,7 +6,7 @@
 /*   By: abdel-ma <abdel-ma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 22:07:34 by abdel-ma          #+#    #+#             */
-/*   Updated: 2023/12/20 22:46:05 by abdel-ma         ###   ########.fr       */
+/*   Updated: 2023/12/21 15:23:28 by abdel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,4 @@ int	ft_printf(const char *format, ...)
 	va_end(list);
 	return (len);
 }
+
