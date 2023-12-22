@@ -6,7 +6,7 @@
 /*   By: abdel-ma <abdel-ma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 22:20:46 by abdel-ma          #+#    #+#             */
-/*   Updated: 2023/12/21 15:20:47 by abdel-ma         ###   ########.fr       */
+/*   Updated: 2023/12/22 15:40:00 by abdel-ma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	ft_hex(unsigned int n, char x, int *len)
 	}
 }
 
-void	ft_ptr(unsigned long n, char x, int *len)
+void	ft_ptr(unsigned long n, int *len)
 {
 	char	*hex;
 
@@ -39,7 +39,7 @@ void	ft_ptr(unsigned long n, char x, int *len)
 		ft_char(hex[n % 16], len);
 	if (n >= 16)
 	{
-		ft_ptr(n / 16, x, len);
+		ft_ptr(n / 16, len);
 		ft_char(hex[n % 16], len);
 	}
 }
@@ -52,7 +52,7 @@ void	ft_printadress(unsigned long n, int *len)
 		return ;
 	}
 	ft_str("0x", len);
-	ft_ptr(n, 'x', len);
+	ft_ptr(n, len);
 }
 
 void	ft_check(va_list list, char format, int *len)
